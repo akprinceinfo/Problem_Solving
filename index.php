@@ -85,7 +85,57 @@
         <input type="submit" value="file Send" name="btn">
     </form> -->
 
-    <!-- 8. Write a PHP script, which will return the following components of the url 'https://www.w3resource.com/php-exercises/php-basic-exercises.php'.
-  -->
+    <!-- 8. Write a PHP script, which will return the following components of the url 'https://www.w3resource.com/php-exercises/php-basic-exercises.php'. -->
+
+
+    <?php
+        // $url = "https://www.w3resource.com/php-exercises/php-basic-exercises.php";
+
+        // $parsedUrl = parse_url($url);
+        
+        // echo "Scheme: " . $parsedUrl['scheme'] . "<br>";
+        // echo "Host: " . $parsedUrl['host'] . "<br>";
+        // echo "Port: " . (isset($parsedUrl['port']) ? $parsedUrl['port'] : 'N/A') . "<br>";
+        // echo "Path: " . (isset($parsedUrl['path']) ? $parsedUrl['path'] : 'N/A') . "<br>";
+        // echo "Query: " . (isset($parsedUrl['query']) ? $parsedUrl['query'] : 'N/A') . "<br>";
+        // echo "Fragment: " . (isset($parsedUrl['fragment']) ? $parsedUrl['fragment'] : 'N/A') . "<br>";
+    ?>
+        <!-- parse_url এর ব্যবহার
+        parse_url ফাংশনটি সাধারণত বিভিন্ন উদ্দেশ্যে ব্যবহৃত হয়:
+
+        URL থেকে নির্দিষ্ট উপাদান বের করতে: উদাহরণস্বরূপ, ডোমেন, প্রোটোকল বা পাথ আলাদা করতে।
+        URL এর বিভিন্ন অংশের উপর ভিত্তি করে লজিক প্রয়োগ করতে: যেমন রিডাইরেকশন, বিভিন্ন সাবডোমেনে অ্যাকশন নেওয়া।
+        URL এর বৈধতা পরীক্ষা করতে। -->
+
+
+
+    <!-- 9. Write a PHP script, which changes the color of the first character of a word. -->
+    <?php 
+
+        // $text = "PHP Tutorial"; 
+        // // color of first character of the word 
+        // $text = preg_replace('/(\b[a-z])/i', 
+        // '<span style="color:green;">\1</span>', $text); 
+        // // Display the text value 
+        // echo $text
+    ?>
+
+    <!-- 10. Write a PHP  script, to check whether the page is called from 'https' or 'http'. -->
+    <?php
+        // function checkProtocol() {
+           
+        //    if (isset($_SERVER['HTTPS']) == 'true') {
+        //      return 'https';
+        //    }else{
+        //     return 'http';
+        //    }
+        // }
+
+        // // Usage
+        // $protocol = checkProtocol();
+        // echo "The page is called using " . $protocol;
+    ?>
+
+    
 </body>
 </html>
