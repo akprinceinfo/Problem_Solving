@@ -136,6 +136,133 @@
         // echo "The page is called using " . $protocol;
     ?>
 
+    <!-- 11. Write a PHP script to redirect a user to a different page . -->
+    <?php 
+        //header('Location: https://www.w3resource.com/');
+    ?>
     
+    <!-- 12. Write a simple PHP program to check that emails are valid. -->
+
+
+    <?php 
+        // $email = "";
+        // $emailErr = "";
+
+        // if (isset($_REQUEST['send'])) {
+        //     $email = $_REQUEST['email'];
+
+        //     if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+        //         $emailErr = "Invalid email format";
+        //     }else{
+        //         $emailErr = "email format";
+        //     }
+        // }
+        // echo $emailErr;
+    ?>
+    <!-- <form method="POST">
+        <input type="text" name="email" id="">
+        <input type="submit" value="Send" name="send">
+    </form> -->
+
+    <!-- 13. Write a e PHP script to display string, values within a table. -->
+
+    <?php
+    //     $name = array("A","B","C");
+    //     $money = array("1000$","1200$","1400$");
+    // ?>
+    <table border="1">
+        <!-- <tr>
+            <td>Salary od Mr. <?php echo $name[0] ?> is</td>
+            <td> <?php echo $money[0] ?></td>
+        </tr>
+        <tr>
+            <td>Salary od Mr. <?php echo $name[1] ?> is</td>
+            <td> <?php echo $money[1] ?></td>
+        </tr>
+        <tr>
+            <td>Salary od Mr. <?php echo $name[2] ?> is</td>
+            <td> <?php echo $money[2] ?></td>
+        </tr> -->
+
+    </table>
+
+    <!-- 14. Write a PHP script to display source code of a webpage (e.g. "http://www.example.com/"). -->
+    <?php
+        // // Read all lines from the specified URL and store them in an array
+        // $all_lines = file('http://www.example.com/');
+
+        // // Iterate through each line in the array
+        // foreach ($all_lines as $line_num => $line)
+        // {
+        //     // Display the line number and the HTML-escaped content of the line
+        //     echo "Line No.-{$line_num}: " . htmlspecialchars($line) . "<br />\n";
+        // }
+    ?>
+
+    <!-- 15. Write a PHP script to get last modified information of a file. -->
+
+   
+    <?php
+        // // Get the current file name using basename and $_SERVER['PHP_SELF']
+        // $current_file_name = basename($_SERVER['PHP_SELF']);
+
+        // // Get the last modification time of the current file
+        // $file_last_modified = filemtime($current_file_name);
+
+        // // Display the last modified time in a human-readable format
+        // echo "Last modified " . date("l, dS F, Y, h:i a", $file_last_modified) . "\n";
+    ?>
+
+    <!-- 16. Write a PHP script to count number of lines in a file. -->
+
+    <?php 
+        // $filePath = "index.php"; 
+        // $lines = count(file($filePath)); 
+        // echo $lines; 
+    ?> 
+    <!-- 17. Write a PHP script to print current PHP version. -->
+
+    <?php # echo phpversion() ?>
+
+    <!-- 18. Write a PHP script to delay the program execution for the given number of seconds. -->
+    <?php
+        // // Output the current time in the 'hour:minute:second' format
+        // echo date('h:i:s a') . "\n";
+
+        // // Sleep for 2 seconds
+        // sleep(2);
+
+        // // Output the current time again after waking up
+        // echo date('h:i:s a')."\n";
+    ?>
+
+    <!-- 19. Arithmetic operations on character variables : $d = 'A00'. Using this variable print the following numbers. -->
+    
+    <?php 
+        // $d = 1;
+        // while ($d <=5) {
+        // echo "A0".$d . "</br>";
+        // $d++;
+    // }
+
+        // $d = 'A00';
+        // // Loop through 5 iterations
+        // for ($n = 0; $n < 5; $n++) {
+        //     // Increment $d and echo the result
+        //     echo ++$d . "\n";
+    // }
+
+    ?>
+
+    <!-- 20. Write a PHP script to get the last occurred error. -->
+    <?php
+        // echo $name;
+    ?>
+    <pre> 
+        <?php # print_r(error_get_last()); ?>
+    </pre>
+
+
+
 </body>
 </html>
