@@ -262,6 +262,84 @@
         <?php # print_r(error_get_last()); ?>
     </pre>
 
+    <!-- 21. Write a PHP function to test whether a number is greater than 30, 20 or 10 using ternary operator. -->
+    <?php
+        
+        // function trinary($input){
+        //     $data = $input > 30 ? "Output > 30" : ($input > 20 ? "Output > 20" : ($input > 10 ? "Output > 10" : "Output < 10"));
+        //     echo $data . " : " . $input . "\n"  . "<br>";
+        // }
+        // trinary(20) ;
+        // trinary(21) ;
+        // trinary(12) ;
+        // trinary(4) ;
+    ?>
+
+    <!-- 22. Write a PHP script to get the full URL. -->
+
+    <?php
+        // $full_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        // echo $full_url . "\n";
+    ?>
+
+    <!-- 23. Write a PHP script to compare the PHP version. -->
+
+    <?php 
+        // if (version_compare(PHP_VERSION,'7.000')> 0) {
+        //     echo 'I am at least PHP version 7.0.0, my version: ' . PHP_VERSION . "\n";
+        // }
+        // if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
+        //     echo 'I am at least PHP version 5.3.0, my version: ' . PHP_VERSION . "\n";
+        // }
+        // if (version_compare(PHP_VERSION, '5.0.0', '<')) {
+        //     echo 'I am still PHP 4, my version: ' . PHP_VERSION . "\n";
+        // }
+    ?>
+    <!-- 24. Write a PHP script to get the name of the owner of the current PHP script. -->
+    <?php
+       // echo 'Current script owner: ' . get_current_user() . "\n";
+    ?>
+    
+    <!-- 25. Write a PHP script to get the document root directory under which the current script is executing, as defined in the server's configuration file. -->
+
+    <?php 
+        // $input = getenv("DOCUMENT_ROOT");
+        // echo $input;
+    ?>
+
+    <!-- 26. Write a PHP script to get the information about the operating system PHP is running on. -->
+    <?php 
+        //  echo(PHP_OS);
+    ?>
+    <!-- 27. Write a PHP script to print out all the credits for PHP. -->
+    <?php 
+        // phpcredits(CREDITS_ALL - CREDITS_FULLPAGE); 
+    ?>
+    <!-- 28. Write a PHP script to get the directory path used for temporary files. -->
+    <?php 
+        // $temp_file = tempnam(sys_get_temp_dir(), 'apple');
+        // echo $temp_file;
+    ?>
+    <!-- 29. Write a PHP script to get the names of the functions of a module. -->
+    <?php 
+        // $json_extension_funcs = get_extension_funcs("JSON");
+        // print_r($json_extension_funcs);
+        // echo "\n" . "<br>";
+
+        // $xml_extension_funcs = get_extension_funcs("XML");
+        // // Print the list of XML extension functions
+        // print_r($xml_extension_funcs);
+        // echo "\n";
+    ?>
+    <!-- 30. Write a PHP script to get the time of the last modification of the current page -->
+    <?php 
+        $last_modified_time = getlastmod().date("F d Y H:i:s.", getlastmod());
+        echo $last_modified_time;
+    ?>
+    
+
+
+
 
 
 </body>
