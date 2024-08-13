@@ -333,13 +333,204 @@
     ?>
     <!-- 30. Write a PHP script to get the time of the last modification of the current page -->
     <?php 
-        $last_modified_time = getlastmod().date("F d Y H:i:s.", getlastmod());
-        echo $last_modified_time;
+        // $last_modified_time = getlastmod().date("F d Y H:i:s.", getlastmod());
+        // echo $last_modified_time;
     ?>
     
+    <!-- 31. Write a PHP program to swap two variables. -->
+    <?php
+        // $a = 5;
+        // $b = 10;
+        
+        // echo "Before swapping: a = $a, b = $b\n";
+        
+        // // Swap values using a temporary variable
+        // $temp = $a;
+        // $a = $b;
+        // $b = $temp;
+        
+        // echo "After swapping: a = $a, b = $b\n";
+
+    ?>
+
+    <!-- 32. Write a PHP program to check whether a number is an Armstrong number or not. Return true if the number is Armstrong otherwise return false. -->
+
+    <?php 
+
+    // function armstrongCheck($number){
+    //     $sum = 0;  
+    //     $x = $number;  
+    //     while($x != 0)  
+    //     {  
+    //         $rem = $x % 10;  
+    //         $sum = $sum + $rem*$rem*$rem;  
+    //         $x = $x / 10;  
+    //     }  
+        
+    //     // if true then armstrong number
+    //     if ($number == $sum)
+    //         return 1;
+        
+    //     // not an armstrong number    
+    //     return 0;    
+    // }
+    
+    // // Driver Code
+    // $number = 153;
+    // $flag = armstrongCheck($number);
+    // if ($flag == 1)
+    //     echo "armstrong number";
+    // else
+    //     echo "Not armstrong number"
+    
+    ?>
+
+    <!-- 33. Write a PHP program to convert word to digit. -->
+    <?php
+     
+        // function wordCheck($word){
+        //     $warr = explode(';', $word);
+
+        //     $result = "";
+
+        //     foreach($warr as $value){
+        //         switch (trim($value)) {
+        //             case 'zero':
+        //                 $result .= '0';
+        //                 break;
+        //             case 'one':
+        //                 $result .= '1';
+        //                 break;
+        //             case 'two':
+        //                 $result .= '2';
+        //                 break;
+        //             case 'three':
+        //                 $result .= '3';
+        //                 break;
+        //             case 'four':
+        //                 $result .= '4';
+        //                 break;
+        //             case 'five':
+        //                 $result .= '5';
+        //                 break;
+        //             case 'six':
+        //                 $result .= '6';
+        //                 break;
+        //             case 'seven':
+        //                 $result .= '7';
+        //                 break;
+        //             case 'eight':
+        //                 $result .= '8';
+        //                 break;
+        //             case 'nine':
+        //                 $result .= '9';
+        //                 break;    
+        //                 }
+        //             }
+                
+        //         return $result;
+
+        // }
+        // echo wordCheck("zero;three;five;six;eight;one") . "\n";
+
+    ?>
+
+<!-- 35. Write a PHP program to remove duplicates from a sorted list. -->
+
+    <?php 
+    
+        //     function removeDuplicates($listData){
+        //         $number = array_values(array_unique($listData));
+        //         return $number;
+        //     }
+
+        //     $nums = array(1, 1, 2, 2, 3, 4,4, 5, 5);
+        //    ?>
+            <!-- <pre> -->
+           <?php
+            // print_r(removeDuplicates($nums));
+    
+    ?>
+            <!-- </pre> -->
 
 
+        <!-- 37. Write a PHP program to compute the sum of the prime numbers less than 100. -->
+       
+    <?php 
 
+        // $primes = array();
+        // $is_prime_no = false;
+
+       
+        // for ($i=2; $i < 100; $i++) { 
+        //     $is_prime_no = true;
+
+        //     for ($j=2; $j <= ($i/2); $j++) { 
+        //         if ($i % $j == 0) {
+        //             $is_prime_no = false;
+        //             break;
+        //         }
+        //     }
+        //     if ($is_prime_no) {
+        //             array_push($primes, $i);
+        //         }
+        //     if (count($primes) == 100) {
+        //         $is_prime_no = false;
+        //         break;
+        //     }
+        // }
+        // echo array_sum($primes) . "\n";
+    ?>
+
+    <!-- 38. Write a PHP program to valid an email address. -->
+
+    <?php
+        // $email = "";
+        // $emailErr = "";
+        // if(isset($_POST['submit'])) {
+        //     $email = $_POST["em"];
+        //     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        //         $emailErr = "Invalid email format";
+        //         }else{
+        //             echo "Done";
+        //         }
+        //         echo $emailErr;
+        // }
+              
+    ?>
+
+     <!-- <form method="POST">
+        <input type="text" name="em" id="">
+        <input type="submit" name="submit" value="Send">
+     </form> -->
+
+     <!-- 39. Write a PHP program to get the size of a file. -->
+     <?php 
+        // echo filesize("abc.php");
+     ?>
+    <!-- 40. Write a PHP program to calculate the mod of two given integers without using any inbuilt modulus operator. -->
+    
+    <?php 
+        // $a = 5;
+        // $b = 11;
+
+        // $c =( $b % $a);
+        // echo $c;
+    ?>
+    <!-- 41. Write a PHP program to print out the multiplication table upto 6*6. -->
+
+    <?php 
+    
+            // for ($i=1; $i <= 5 ; $i++) { 
+            //     for ($j=0; $j <= $i; $j++) { 
+            //         echo " 0 ";
+            //     }
+            //     echo " 1 " ."</br>";
+            // }
+    
+    ?>
+
+   
 
 
 </body>
