@@ -530,7 +530,278 @@
     
     ?>
 
-   
+    <!-------- PHP Basic Algorithm ----------->
+    
+    <!-- 1. Write a PHP program to compute the sum of the two given integer values. If the two values are the same, then returns triple their sum. -->
+    
+    <?php 
+
+        // function sumData($a,$b){
+        //     if ($a == $b) {
+        //         return ($a + $b) * 3; 
+        //     }else{
+        //         return ($a + $b);
+        //     }
+            
+        // }
+       
+        // echo sumData(1,2) . "</br>";
+        // echo sumData(3,2) . "</br>";
+        // echo sumData(2,2);
+    
+    ?>
+
+    <!-- 2. Write a PHP program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference. -->
+    
+    <?php 
+
+        // function sumData($n){
+            
+        //     $cal = 51;
+            
+        //     if ($n > $cal) {
+        //         return ($n - $cal)*3;
+        //     }else{
+        //         return $cal-$n;
+        //     }
+        // }
+       
+        // echo sumData(53) . "</br>";
+        // echo sumData(30) . "</br>";
+        // echo sumData(51);
+    
+    ?>
+    <!-- 3. Write a PHP program to check two given integers, and return true if one of them is 30 or if their sum is 30.
+    Sample Input: -->
+
+    <?php 
+
+        // function sumBool($x,$y){
+        //     return ($x==30) || ($y == 30) || ($x + $y == 30);
+        // }
+       
+        // echo var_dump(sumBool(30,0)) . "</br>";
+        // echo var_dump(sumBool(25,5) ). "</br>";
+        // echo var_dump(sumBool(20,30)) . "</br>";
+        // echo var_dump(sumBool(20,25));
+    
+    ?>
+
+    <!-- 4. Write a PHP program to check a given integer and return true if it is within 10 of 100 or 200. -->
+        
+    <?php 
+
+        // function sumBool($x){
+        //    if (abs($x - 100) <= 10 || abs($x - 200) <= 10) {
+        //     return true;
+        //    }
+        //    return false;
+        // }
+       
+        // echo var_dump(sumBool(103)) . "</br>";
+        // echo var_dump(sumBool(90)). "</br>";
+        // echo var_dump(sumBool(89)) . "</br>";
+    
+    
+    ?>
+
+    <!-- 5. Write a PHP program to create a new string where 'if' is added to the front of a given string. If the string already begins with 'if', return the string unchanged. -->
+    
+    <?php 
+        
+        // function stringCheck($x){
+        //     if (str_contains($x, 'if')) {
+        //         echo $x;
+        //     }else{
+        //         echo "if " . $x ;
+        //     }
+        // }
+       
+        // echo stringCheck("if else") . "</br>";
+        // echo stringCheck("else") . "</br>";
+        // echo stringCheck("if") . "</br>";
+
+    ?>
+
+    <!-- 6. Write a PHP program to remove the character in a given position of a given string. The given position will be in the range 0..string length -1 inclusive. -->
+    
+    <?php 
+        
+        // function stringLangth($x,$posi){
+        //     return  substr($x,0,$posi) . substr($x,$posi+1, strlen($x)-$posi);
+        // }
+       
+        // echo stringLangth("Python",1) . "</br>";
+        // echo stringLangth("Python",0) . "</br>";
+        // echo stringLangth("Python",4) . "</br>"."</br>";
+
+    ?>
+
+    <!-- 7. Write a PHP program to exchange the first and last characters in a given string and return the new string. -->
+    
+    <?php 
+        
+    //   function firstAndLastChange($data){
+    //     $langth = strlen($data);
+
+    //     if ($langth<=1) {
+    //         return $data;
+    //     }
+
+    //     $first_data = $data[0];
+    //     $last_data = $data[$langth-1];
+
+    //     $middleData = substr($data,1, $langth - 2);
+
+    //     $dataCreate = $last_data . $middleData . $first_data ;
+
+    //     return $dataCreate;
+
+    //   }
+    //   echo firstAndLastChange("abcd"). "</br>";
+    //   echo firstAndLastChange("a"). "</br>";
+    //   echo firstAndLastChange("xy"). "</br>";
+    ?>
+
+    
+    <!-- 8. Write a PHP program to create a new string which is 4 copies of the 2 front characters of a given string. If the given string length is less than 2 return the original string. -->
+    
+    <?php 
+        
+    //   function stringCopy($data){
+    //     $langth = strlen($data);
+
+    //     if ($langth<2) {
+    //         return $data;
+
+    //     }else{
+
+    //         $first_data = $data[0];
+    //         $secend_data = $data[1];
+
+    //         $totalData = $first_data . $secend_data;
+
+    //         $dataCreate = $totalData .$totalData . $totalData . $totalData;
+
+    //         return $dataCreate;
+
+    //     }
+
+        
+
+    //   }
+    //   echo stringCopy("C Sharp"). "</br>";
+    //   echo stringCopy("JS"). "</br>";
+    //   echo stringCopy("A"). "</br>";
+    ?>
+
+    <!-- 9. Write a PHP program to create a new string with the last char added at the front and back of a given string of length 1 or more. -->
+
+
+    <?php 
+        
+    //   function stringCopy($data){
+    //     $langth = strlen($data);
+
+    //     if ($langth >= 1) {
+
+    //         $last_data = $data[$langth-1];
+
+    //         $totalData = $last_data . $data . $last_data;
+
+    //         return $totalData;
+
+    //     }else{
+    //         echo "plz Data Insert";
+    //     }
+
+    //   }
+    //   echo stringCopy("Prince"). "</br>";
+    //   echo stringCopy("Green"). "</br>";
+    //   echo stringCopy("1"). "</br>";
+    ?>
+
+    <!-- 10. Write a PHP program to check if a given positive number is a multiple of 3 or a multiple of 7. -->
+
+    <?php 
+    
+        //     function number($data){
+        //         return $data % 3 == 0 || $data % 7 == 0; ;
+        //     }
+
+            
+        //   echo  var_dump(number(3)) . "</br>";
+        //   echo  var_dump(number(14)) ."</br>";
+        //   echo  var_dump(number(12)) ."</br>";
+        //   echo  var_dump(number(37)) ."</br>";
+    ?>
+
+    <!-- 11. Write a PHP program to create a new string taking the first 3 characters of a given string and return the string with the 3 characters added at both the front and back. If the given string length is less than 3, use whatever characters are there. -->
+
+    <?php 
+        //   function stringAdd($data){
+        //     $langth = strlen($data);
+        //     if ($langth >= 3) {
+
+        //         $first_data = substr($data, 0, 3);
+        //         $totalData = $first_data . $data . $first_data;
+        //         return $totalData;
+    
+        //     }else{
+        //         return $data . $data . $data;
+        //     }
+        //   }
+        //   echo stringAdd("Python"). "</br>";
+        //   echo stringAdd("Js"). "</br>";
+        //   echo stringAdd("Code"). "</br>";
+        ?>
+
+    <!-- 12. Write a PHP program to check if a given string starts with 'C#' or not. -->
+        
+    <?php 
+
+        //   function stringAdd($data){
+        //     $check = strlen($data);
+        //     return ($check < 3 && $data == "C#") || (substr($data, 0, 2) == "C#" && substr($data, 2, 1) == ' ');
+        //   }
+        //   echo var_dump(stringAdd("PHP")). "</br>";
+        //   echo var_dump(stringAdd("C#"))."</br>";
+        //   echo var_dump(stringAdd("C++")). "</br>";
+    ?>
+
+<!-- 13.Write a PHP program to check if one given temperatures is less than 0 and the other is greater than 100. -->
+
+ <?php 
+
+        //   function stringAdd($data){
+        //         return ($data < 0) || ($data > 100);
+        //   }
+
+        //   echo var_dump(stringAdd(120, -1)). "</br>";
+        //   echo var_dump(stringAdd(-1, 120))."</br>";
+        //   echo var_dump(stringAdd(2, 120)). "</br>";
+    ?>
+
+
+<!-- 14. Write a PHP program to check two given integers whether either of them is in the range 100..200 inclusive. -->
+
+<?php 
+
+//   function stringAdd($data){
+//         return (100 <= $data) && (200 >= $data);
+//   }
+
+//   echo var_dump(stringAdd(100, 199)). "</br>";
+//   echo var_dump(stringAdd(250, 300))."</br>";
+//   echo var_dump(stringAdd(105, 190)). "</br>";
+?>
+
+
+
+
+
+
+
 
 
 </body>
