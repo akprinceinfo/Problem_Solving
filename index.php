@@ -797,6 +797,46 @@
 ?>
 
 
+<!-- 15. Write a PHP program to check whether three given integer values are in the range 20..50 inclusive. Return true if 1 or more of them are in the said range otherwise false. -->
+
+
+<?php 
+
+//   function stringAdd($data1,$data2,$data3){
+//         if (($data1 >= 20 && $data1 <= 50) || ($data2 >= 20 && $data2 <= 50) || ($data3 >= 20 && $data3 <= 50) ) {
+//             return true;
+//         }else{
+//             return false;
+//         }
+        
+//   }
+
+//   echo var_dump(stringAdd(11, 20, 12)). "</br>";
+//   echo var_dump(stringAdd(30, 30, 17))."</br>";
+//   echo var_dump(stringAdd(25, 35, 50)). "</br>";
+//   echo var_dump(stringAdd(15, 12, 8)). "</br>";
+?>
+
+<!-- 16. Write a PHP program to check whether two given integer values are in the range 20..50 inclusive. Return true if 1 or other is in the said range otherwise false. -->
+
+<?php 
+
+  function valuesCheck($data){
+        if (($data >= 20 && $data <= 50) ) {
+            return true;
+        }else{
+            return false;
+        }
+        
+  }
+
+  echo var_dump(valuesCheck(20, 84)). "</br>";
+  echo var_dump(valuesCheck(14, 50))."</br>";
+  echo var_dump(valuesCheck(11, 45)). "</br>";
+  echo var_dump(valuesCheck(25, 40)). "</br>";
+?>
+
+
 
 
 
