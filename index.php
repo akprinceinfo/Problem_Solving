@@ -821,27 +821,64 @@
 
 <?php 
 
-  function valuesCheck($data){
-        if (($data >= 20 && $data <= 50) ) {
-            return true;
-        }else{
-            return false;
-        }
+//   function valuesCheck($data){
+//         if (($data >= 20 && $data <= 50) ) {
+//             return true;
+//         }else{
+//             return false;
+//         }
         
-  }
+//   }
 
-  echo var_dump(valuesCheck(20, 84)). "</br>";
-  echo var_dump(valuesCheck(14, 50))."</br>";
-  echo var_dump(valuesCheck(11, 45)). "</br>";
-  echo var_dump(valuesCheck(25, 40)). "</br>";
+//   echo var_dump(valuesCheck(20, 84)). "</br>";
+//   echo var_dump(valuesCheck(14, 50))."</br>";
+//   echo var_dump(valuesCheck(11, 45)). "</br>";
+//   echo var_dump(valuesCheck(25, 40)). "</br>";
+?>
+
+<!-- 17. Write a PHP program to check if a string 'yt' appears at index 1 in a given string. If it appears return a string without 'yt' otherwise return the original string. -->
+
+<?php 
+
+        // function yt_Check($data){
+
+        //     if (substr($data, 1, 2) == "yt") {
+        //         echo strlen($data)-2;
+        //         return substr($data, 0, 1).substr($data, 3, strlen($data)-2);
+        //     }else{
+        //         return $data;
+        //     }
+
+        // }
+
+        // echo yt_Check("Python"). "</br>";
+        // echo yt_Check("ytade"). "</br>";
+        // echo yt_Check("jsues"). "</br>";
+
 ?>
 
 
+<!-- 18. Write a PHP program to check the largest number among three given integers. -->
 
+<?php 
 
+  function valuesCheck($data1,$data2,$data3){
+        if ($data1 >= $data2 && $data1 >= $data3) {
+            return $data1;
+        }
+        if ($data2 >= $data3 && $data2 >= $data1) {
+            return $data2;
+        }
+        if ($data3 >= $data1 && $data3 >= $data2) {
+            return $data3;
+        }        
+  }
 
-
-
+  echo valuesCheck(1,2,3). "</br>";
+  echo valuesCheck(3,2,1)."</br>";
+  echo valuesCheck(1,1,1). "</br>";
+  echo valuesCheck(1,2,2). "</br>";
+?>
 
 
 </body>
