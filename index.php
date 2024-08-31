@@ -881,5 +881,24 @@
 ?>
 
 
+<!-- 19.Write a PHP program to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal. -->
+<?php
+function test($x, $y) 
+{
+
+   $n = 100;
+   
+   $firstNumber = abs($x - $n);
+   $secondNumber = abs($y - $n);
+   return $firstNumber == $secondNumber ? 0 : ($firstNumber < $secondNumber ? $x : $y);
+}
+
+echo test(78, 95)."\n";
+echo test(95, 95)."\n";
+echo test(99, 70)."\n";
+
+?>
+
+
 </body>
 </html>
